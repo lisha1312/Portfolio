@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Lisha Singh- Portfolio</title>
+    <link rel="stylesheet" href="Lisha_portfolio.css">
+
+</head>
+
+<body>
+    <div id="home"  class="nav">
+        <ul>
+            <li class="selected" onclick="changeColor(this)"><a href="">Home</a></li>
+            <li><a href="#about" onclick="changeColor(this)">About</a></li>
+            <li><a href="#educations" onclick="changeColor(this)">Education</a></li>
+            <li><a href="#project" onclick="changeColor(this)">Projects</a></li>
+            <li><a href="#cert" onclick="changeColor(this)">certificate</a></li>
+            <li><a href="#profile" onclick="changeColor(this)">Profiles</a></li>
+            <li><a href="#contacts" onclick="changeColor(this)">Contact</a></li>
+        </ul>
+
+        <div class="linkdin">
+
+            <a href="https://www.linkedin.com/in/lisha-singh-34a696232/"><span id="myName"></span>
+                <img src="linkdin.png" alt="linkdin"></a>
+        </div>
+
+    </div>
+
+    <!-- srcpit for nav -->
+    <script>
+        function changeColor(link) {
+            document.querySelectorAll('a').forEach(function (el) {
+                el.parentElement.classList.remove('selected');
+            });
+
+            link.parentElement.classList.add('selected');
+        }
+    </script>
+
+
+    <div class="box">
+        <div class="boxLeft">
+            <div class="text">
+                <span class="firstLine">Hello, My name is </span>
+                <span id="firstName">Lisha Rajeshwari singh</span>
+                <div class="secondLine">and I am a Passionated about,</div>
+                <div class="lastLine"><span id="element"></span></div>
+                <button class="btnResume" onclick="downloadResume()"> Resume</button>
+            </div>
+            
+        </div>
+        <div class="boxRight">
+            <div class="imgcontainer">
+                <img id="changingImage" src="lisha.jpg" alt="img1">
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['DSA- Problem solving.', 'Programming Languages.', 'Web devlopment.', 'Android Devlopment.'],
+            typeSpeed: 100,
+        });
+    </script>
+<!--
+    about me
+     <div id="about" class="aboutme">About Me</div> 
+
+     <div class="aboutt">
+
+        <div class="aboutleft">
+            <div class="imgcontainer">
+                <img id="changingImage" src="lisha_certificate.jpg" alt="img1">
+            </div>
+        </div>
+
+        <div class="aboutright">
+          <div class="">
+            <span class="first"> I enjoy problem-solving and coding. Always strive to bring 100% to the work I do. currently learning DSA and Algorithm and working on my problem solving skill.
+            </span>
+            <div class="second">
+                <div>Languages:C, C++, HTML, CSS</div>
+                <div>Databases:MySQL</div>
+                <div>Interested:Web Technology, Android Development, Software Engineering.</div>
+            </div>
+            <span class="third">
+                Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
+            </span>
+          </div> 
+        </div>
+    </div> 
+-->
+    
+
+    <div id="educations" class="myEducation">My Education</div>
+
+    <div class="education">
+       
+        <div class="eduCard cool">
+            <div class="cardLeft">
+                <div class="collegeName">Chandigarh Engineering College</div>
+                <div class="branch">B.Tech - Information Technology</div>
+            </div>
+            <div class="cardRight">
+                <div class="duration">2021-25</div>
+                <div class="place">Mohali, Punjab</div>
+            </div>
+        </div>
+
+        <div class="eduCard cool">
+            <div class="cardLeft">
+                <div class="collegeName">Sree Ayyappa Public School</div>
+                <div class="branch">Intermediate - CBSE</div>
+            </div>
+            <div class="cardRight">
+                <div class="duration">2019-20</div>
+                <div class="place">Bokaro, Jharkhand</div>
+            </div>
+        </div>
+
+        <div class="eduCard cool">
+            <div class="cardLeft">
+                <div class="collegeName">D.A.V Public School </div>
+                <div class="branch">Matriculation - CBSE</div>
+            </div>
+            <div class="cardRight">
+                <div class="duration">2017-18</div>
+                <div class="place">Bokaro, Jharkhand<</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project" class="myProjects">Projects</div>
+
+    <div class="projects">
+        <div class="projectCard">
+            <div class="proCard1">
+                <img src="coffee.png" alt="coffee">
+                <div class="projectDetails">
+                    <div class="projectName">Coffee Cafe Website</div>
+                    <div class="projectType">Web Devlopment</div>
+                </div>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="proCard1">
+                <img src="ptu.png" alt="ptu">
+                <div class="projectDetails">
+                    <div class="projectName">PTU Student App</div>
+                    <div class="projectType">Android Devlopment</div>
+                </div>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="proCard1">
+                <img src="netflix.png" alt="netflix">
+                <div class="projectDetails">
+                    <div class="projectName">Netflix Clone</div>
+                    <div class="projectType">Web Devlopment</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cert" class="mycertificate"> Certificate</div>
+     
+    <div class="certificate">
+        <div class="certCard">
+            <div class="certCard1">
+                <img src="HTML.png" alt="certificate">
+                <div class="certDetails">
+                    <div class="certName">Frontend-HTML</div>
+                    <div class="certType">Great Learning</div>
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="certCard">
+            <div class="certCard1">
+                <img src="AWS.png" alt="certificate">
+                <div class="certDetails">
+                    <div class="certName">AWS</div>
+                    <div class="certType">Great Learning</div>
+                </div>
+            </div>
+        </div>
+         
+      
+        <div class="certCard spic" >
+            <div class="certCard1">
+                <img src="SPIC.png" alt="certificate">
+                <div class="certDetails">
+                    <div class="certName">Android Development</div>
+                    <div class="certType">SPIC- Socity for Promotion of Information Technology,Chandigarh</div>
+                </div>
+            </div>
+        </div>
+    </div>     
+
+    <div id="profile" class="codingProfiles">Coding Profiles</div>
+
+    <div class="profilesContainer">
+        <div class="profile1">
+            <div class="circular-card">
+              <a href="https://auth.geeksforgeeks.org/user/singhlisha36">  <img src="gfg.jpg" alt="Image"> </a>
+            </div>
+            <div class="profileName">Geeks for Geeks</div>
+        </div>
+
+        <div class="profile1">
+            <div class="circular-card">
+              <a href="https://auth.geeksforgeeks.org/user/singhlisha36">  <img src="leetcodde.png" alt="Image"> </a>
+            </div>
+            <div class="profileName">Leetcode</div>
+        </div>
+        
+        <div class="profile1">
+            <div class="circular-card">
+               <a href=""> <img src="github.jpg" alt="Image"></a>
+            </div>
+            <div class="profileName">Git Hub</div>
+        </div>
+        
+        <div class="profile1">
+            <div class="circular-card">
+               <a href="https://www.hackerrank.com/profile/singhlisha36"> <img src="hackerrank.png" alt="Image"></a>
+            </div>
+            <div class="profileName">HackerRank</div>
+        </div>
+        
+    </div>
+
+    <div id="profile" class="codingProfiles">Languages</div>
+
+    <div class="profilesContainer">
+        <div class="profile1">
+            <div class="circular-card">
+               <img src="c++.png" alt="Image"> </a>
+            </div>
+            <div class="profileName">C++ Programming</div>
+        </div>
+
+        <div class="profile1">
+            <div class="circular-card">
+             <img src="html5.png" alt="Image"> </a>
+            </div>
+            <div class="profileName">HTML5</div>
+        </div>
+
+        <div class="profile1">
+            <div class="circular-card">
+            <img src="css.jpg" alt="Image"> </a>
+            </div>
+            <div class="profileName">CSS3</div>
+        </div>
+
+     </div>
+
+    <div id="contacts" class="contact">
+        <div class="line">Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
+        </div>
+        <div class="footerText1">Let's Connect</div>
+        <div class="mail"><a href="mailto:singhlisha36@gmail.com">singhlisha36@gmail.com</a></div>
+        <div class="connectLinkdin"><a href="https://www.linkedin.com/in/lisha-singh-34a696232/">Linkdin</a></div>
+    </div>
+
+    <script src="srcipt.js"></script>
+</body>
+
+</html>
